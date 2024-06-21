@@ -1,0 +1,14 @@
+apiversion: v1
+kind: Pod
+metadata: 
+    name: gateway-pod
+    labels:
+        app: gateway
+        type: microservice
+spec:
+    containers:
+        - name: gateway-app
+          image: datus34/serviciosapigateway:latest
+          ports:
+            - containePort: 80
+

@@ -1,0 +1,17 @@
+apiversion: v1
+kind: pod
+metadata: 
+    name:  microservice-libreria-pod
+    labels:
+        app: microservice-libreria
+        type: microservice
+spec:
+    containers:
+        - name: microservice-libreria-app
+          image: datus34/serviciosapilibreria:latest
+          ports:
+            - containePort: 80
+          env:
+          - name: MongoDb__ConnectionString
+            value: mongodb://dquesada:dquesada#4_2024@mongo-service:27017
+
