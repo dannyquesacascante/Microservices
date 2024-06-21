@@ -22,7 +22,7 @@ spec:
         image: mongo:4.2.12
         command: 
         - /bin/bash
-        - c
+        - -c
         env:
         - name: MONGO_INITDB_ROOT_USERNAME
           value: "dquesada"
