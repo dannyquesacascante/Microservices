@@ -11,19 +11,18 @@ spec:
   matchLabels:
    app: microservice-seguridad
    type: microservice
-template:
+ template:
     metadata: 
-    name:  microservice-seguridad-pod
-    labels:
-        app: microservice-seguridad
-        type: microservice
+        labels:
+            app: microservice-seguridad
+            type: microservice
     spec:
-        containers:
-            - name: microservice-seguridad-app
-              image: datus34/serviciosapiseguridad:latest
-              ports:
-                - containePort: 80
-              env:
-                - name: ConnectionStrings__ConexionDB
-                  value: Server=mssql-service;Database=Seguridad;User=sa;Password=dquesada#4_2024
+      containers:
+        - name: microservice-seguridad-app
+          image: datus34/serviciosapiseguridad:latest
+          ports:
+             - containePort: 80
+          env:
+          - name: ConnectionStrings__ConexionDB
+            value: Server=mssql-service;Database=Seguridad;User=sa;Password=dquesada#4_2024
   
