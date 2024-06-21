@@ -21,7 +21,7 @@ spec:
         - name: microservice-seguridad-app
           image: datus34/serviciosapiseguridad:latest
           ports:
-             - containePort: 80
+             - containerPort: 80
           env:
           - name: ConnectionStrings__ConexionDB
             value: Server=mssql-service;Database=Seguridad;User=sa;Password=dquesada#4_2024
