@@ -11,16 +11,15 @@ spec:
   matchLabels:
     app: gateway
     type: microservice
-template:
-   metadata: 
-    name: gateway-pod
-    labels:
-        app: gateway
-        type: microservice
+ template:
+    metadata: 
+        labels:
+            app: gateway
+            type: microservice
     spec:
         containers:
             - name: gateway-app
               image: datus34/serviciosapigateway:latest
               ports:
-                - containePort: 80
+                 - containerPort: 80
 
