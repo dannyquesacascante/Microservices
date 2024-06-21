@@ -16,17 +16,17 @@ spec:
     labels:
         app: microservice-libreria
         name: mongo-pod
-    spec:
-        containers:
-            - name: mongo
-              image: mongo:4.2.12
-              command: 
-                - /bin/bash
-                - c
-              env:
-               - name: MONGO_INITDB_ROOT_USERNAME
-                 value: "dquesada"
-               - name: MONGO_INITDB_ROOT_PASSWORD
-                 value: "dquesada#4_2024"
-              ports:
-                - containerPort: 27017    
+  spec:
+   containers:
+      - name: mongo
+        image: mongo:4.2.12
+        command: 
+        - /bin/bash
+        - c
+        env:
+        - name: MONGO_INITDB_ROOT_USERNAME
+          value: "dquesada"
+        - name: MONGO_INITDB_ROOT_PASSWORD
+          value: "dquesada#4_2024"
+        ports:
+        - containerPort: 27017    
