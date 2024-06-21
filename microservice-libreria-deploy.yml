@@ -13,10 +13,9 @@ spec:
    type: microservice
  template:
     metadata: 
-    name:  microservice-libreria-pod
-    labels:
-        app: microservice-libreria
-        type: microservice
+        labels:
+            app: microservice-libreria
+            type: microservice
     spec:
       containers:
         - name: microservice-libreria-app
