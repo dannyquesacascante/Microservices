@@ -11,9 +11,8 @@ spec:
   matchLabels:
    app: microservice-libreria
    name: mongo-pod
-template:
- metadata: 
-    name:  mongo-pod
+ template:
+  metadata: 
     labels:
         app: microservice-libreria
         name: mongo-pod
@@ -30,4 +29,4 @@ template:
                - name: MONGO_INITDB_ROOT_PASSWORD
                  value: "dquesada#4_2024"
               ports:
-                - containePort: 27017    
+                - containerPort: 27017    
