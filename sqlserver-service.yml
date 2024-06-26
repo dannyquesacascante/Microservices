@@ -6,7 +6,7 @@ metadata:
         name: mssql-service
         app: database
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   ports:
     - port: 1433
       targetPort: 1433
